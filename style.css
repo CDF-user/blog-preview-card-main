@@ -1,3 +1,127 @@
+@font-face {
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-Italic-VariableFont_wght.ttf) format(truetype);
+    font-weight: 300 900;
+    font-style: italic;
+}
 
-.attribution { font-size: 0.6875rem; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@font-face {
+    font-family: "Figtree";
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf) format(truetype);
+    font-weight: 300 900;
+    font-style: normal;
+}
+
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4d04e;
+    font-family: "Figtree";
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 370px;
+    height: auto;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #121212;
+    box-shadow: 8px 8px 0px #121212;
+}
+
+.img-container{
+    display: flex;
+    justify-content: center;
+}
+
+.card-container img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.categorie-container{
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+
+.categorie-container p{
+    background-color: #f4d04e;
+    width: auto;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+.publication-date{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-content h1{
+    font-size: 24px;
+    color: black;
+    margin: 0px;
+    margin-top: 20px;
+    width: fit-content;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+h1:hover{
+    color: #f4d04e;
+}
+
+.card-content p{
+    font-size: 16px;
+    color: #6b6b6b;
+}
+
+.blog-creator{
+    display: flex;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.blog-creator img{
+    width: 30px;
+}
+
+.attribution{
+    padding: 5px 0px;
+    font-size: 0.6875rem; 
+    text-align: center;
+}
+
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}
